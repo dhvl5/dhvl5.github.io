@@ -281,7 +281,7 @@ h2
     left: 0;
     top: 0;
     height: 100%;
-    width: 50%; 
+    width: 30%; 
   } 
 }
 
@@ -300,7 +300,7 @@ h2
     top: 0;
     right: 0;
     height: 100%;
-    width: 45%;
+    width: 55%;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     overflow-x: hidden; 
@@ -402,10 +402,25 @@ h2
 }
 .info-footer__social 
 {
-  position: absolute;
+  display: block;
+  position: relative;
+  width: 115px;
+  text-align: center;
+  margin: auto auto 50px auto;
+  padding: 10px 10px;
+  bottom: 20px;
   font-size: 20px;
-  top: 10px;
-  right: 20px;
+  left: -6px;
+  text-decoration: none;
+  transition-duration: 0.2s;
+}
+@media (min-width: 768px) 
+{
+  .info__footer__social
+  {
+    margin: auto auto auto auto; 
+    padding: 10px 100px;
+  } 
 }
 .info-footer__social-icon, .info-footer__social-icon--linkedin, .info-footer__social-icon--instagram, .info-footer__social-icon--github, .info-footer__social-icon--twitter 
 {
@@ -670,7 +685,7 @@ h2
   display: block;
   text-align: center;
   width: 100px;
-  margin: auto auto 20px auto;
+  margin: auto auto 10px auto;
   padding: 10px 50px;
   color: white;
   background: var(--btn-bg-color);
@@ -689,7 +704,7 @@ h2
   color: var(--btn-bg-color);
   background-color: white; 
 }
-@media (min-width: 768px) 
+@media (min-width: 1500px) 
 {
   .info__button, .info__button--dark 
   {
