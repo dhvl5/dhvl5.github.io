@@ -681,6 +681,55 @@ h2
       display: block; 
     }
 
+.blogbtn
+{
+  display: block;
+  text-align: center;
+  width: 34px;
+  margin: auto auto 10px auto;
+  padding: 10px 0px;
+  color: white;
+  background: var(--btn-bg-color);
+  line-height: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.2s;
+  cursor: default;
+}
+.blogbtn::after
+{
+  content: '';
+  display: block;
+  width: 30%;
+  height: 3px;
+  background: white;
+  transition: width .3s;
+}
+.blogbtn:hover::after
+{
+  width: 100%;
+}
+.blogbtn:hover .tooltip
+{
+  display: block;
+}
+.tooltip
+{
+  display: none;
+  text-align: center;
+  background: black;
+  margin-left: 40px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  padding: 10px;
+  position: absolute;
+  z-index: 1000;
+  width: 190px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+
 .info__button--dark
 {
   display: block;

@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* Ultra Light */
+@font-face 
+{
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff"); 
+}
+/* Regular */
+@font-face 
+{
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff"); 
+}
+/* Bold */
+@font-face 
+{
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff"); 
+}
+
+:root
+{
+  --left-bg-color: #202060;
+  --right-bg-color: #202040;
+  --btn-bg-color: #202060;
+  --txt-color: #fbda91;
+  --big-txt-color: #4baea0;
+}
+
+body, html
+{
+    margin: 0;
+    padding: 0;
+    font-family: "San Francisco", "Helvetica Neue", sans-serif;
+    background-color: var(--right-bg-color);
+}
+h1 span
+{
+    font-size: 45px;
+    text-align: center;
+}
+
+.main_bg
+{
+    background-image: url('blog_bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+}
+.main_txt
+{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    transition: .3s;
+    cursor: default;
+}
+/* .main_txt:hover
+{
+    background-color: rgb(0,0,0); /* Fallback color 
+    background-color: rgba(0,0,0, .7); /* Black w/opacity/see-through 
+} */
+
+.info-footer__social 
+{
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size: 30px;
+}
+@media (min-width: 768px) 
+{
+  .info__footer__social
+  {
+    position: fixed;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+  } 
+}
+.info-footer__social-icon, .info-footer__social-icon--linkedin, .info-footer__social-icon--instagram, .info-footer__social-icon--github, .info-footer__social-icon--twitter 
+{
+  margin-left: 20px;
+  padding-top: 10px;
+  color: white;
+  text-decoration: none;
+  float: right;
+  transition: 0.3s color ease;
+}
+.info-footer__social-icon:hover, .info-footer__social-icon--linkedin:hover, .info-footer__social-icon--instagram:hover, .info-footer__social-icon--github:hover, .info-footer__social-icon--twitter:hover 
+{
+  color: #af9e9e 
+}
+.info-footer__social-icon--linkedin 
+{
+  animation-delay: 1.4s; 
+}
+@media (max-width: 768px) 
+{
+  .info-footer__social-icon--linkedin 
+  {
+    animation-delay: 0.8s; 
+  } 
+}
+.info-footer__social-icon--instagram 
+{
+  animation-delay: 1.6s; 
+}
+@media (max-width: 768px) 
+{
+  .info-footer__social-icon--instagram 
+  {
+    animation-delay: 1s; 
+  } 
+}
+.info-footer__social-icon--github 
+{
+  animation-delay: 1.8s; 
+}
+@media (max-width: 768px) 
+{
+  .info-footer__social-icon--github 
+  {
+    animation-delay: 1.2s; 
+  } 
+}
+.info-footer__social-icon--twitter 
+{
+  animation-delay: 2s; 
+}
+@media (max-width: 768px) 
+{
+  .info-footer__social-icon--twitter 
+  {
+    animation-delay: 1.4s; 
+  } 
+}
