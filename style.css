@@ -694,7 +694,7 @@ h2
   font-weight: 600;
   text-decoration: none;
   transition-duration: 0.2s;
-  cursor: default;
+  /*cursor: default;*/
 }
 .blogbtn::after
 {
@@ -713,7 +713,7 @@ h2
 {
   display: block;
 }
-.tooltip
+/* .tooltip
 {
   display: none;
   text-align: center;
@@ -727,7 +727,7 @@ h2
   width: 100px;
   height: 20px;
   border-radius: 10px;
-}
+} */
 
 
 .info__button--dark
