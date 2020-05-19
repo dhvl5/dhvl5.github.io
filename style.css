@@ -93,7 +93,7 @@ h2
   } 
 }
 
-#fadeUp-animation, .info-footer__social-icon, .info-footer__social-icon--linkedin, .info-footer__social-icon--instagram, .info-footer__social-icon--github, .info-footer__social-icon--twitter, .main__container-about, .main__container-projects, .main__container-clients, .main__container-experience, .main__container-resume
+#fadeUp-animation, .info-footer__social-icon, .info-footer__social-icon--linkedin, .info-footer__social-icon--github, .info-footer__social-icon--twitter, .main__container-about, .main__container-projects, .main__container-clients, .main__container-experience, .main__container-resume
 {
   opacity: 0;
   animation: fadeUp ease-in 1;
@@ -405,7 +405,7 @@ h2
 {
   display: block;
   position: relative;
-  width: 115px;
+  width: 100px;
   text-align: center;
   margin: auto auto 50px auto;
   padding: 10px 10px;
@@ -423,7 +423,7 @@ h2
     padding: 10px 100px;
   } 
 }
-.info-footer__social-icon, .info-footer__social-icon--linkedin, .info-footer__social-icon--instagram, .info-footer__social-icon--github, .info-footer__social-icon--twitter 
+.info-footer__social-icon, .info-footer__social-icon--linkedin, .info-footer__social-icon--github, .info-footer__social-icon--twitter 
 {
   margin-left: 10px;
   padding-top: 10px;
@@ -432,7 +432,7 @@ h2
   float: right;
   transition: 0.3s color ease;
 }
-.info-footer__social-icon:hover, .info-footer__social-icon--linkedin:hover, .info-footer__social-icon--instagram:hover, .info-footer__social-icon--github:hover, .info-footer__social-icon--twitter:hover 
+.info-footer__social-icon:hover, .info-footer__social-icon--linkedin:hover, .info-footer__social-icon--github:hover, .info-footer__social-icon--twitter:hover 
 {
   color: #af9e9e 
 }
@@ -445,17 +445,6 @@ h2
   .info-footer__social-icon--linkedin 
   {
     animation-delay: 0.8s; 
-  } 
-}
-.info-footer__social-icon--instagram 
-{
-  animation-delay: 1.6s; 
-}
-@media (max-width: 768px) 
-{
-  .info-footer__social-icon--instagram 
-  {
-    animation-delay: 1s; 
   } 
 }
 .info-footer__social-icon--github 
